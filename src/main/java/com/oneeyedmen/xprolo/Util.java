@@ -1,3 +1,5 @@
+package com.oneeyedmen.xprolo;
+
 import com.google.common.base.Charsets;
 
 import java.io.IOException;

@@ -57,7 +57,7 @@ public class Domain {
         }
         //...
         public Long id() { return something(); }
-        public Product product() { return something(); }
+        public Product getProduct() { return something(); }
         public Address getShippedTo() { return something(); }
         public BigDecimal getQuantity() { return something(); }
         public BigDecimal getNet() { return something(); }
@@ -69,7 +69,7 @@ public class Domain {
     public abstract class Product {
         public Product(Long id, String description, Object ... andSoOnAndSoOn) {}
         public Long id() { return something(); }
-        public String getDescription() { return something(); }
+        public String getShortText() { return something(); }
     }
 
     public enum OrderStatus {

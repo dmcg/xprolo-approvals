@@ -1,0 +1,58 @@
+{
+  "customer" : {
+    "address" : {
+      "line1" : "line1",
+      "line2" : "line2",
+      "postcode" : "postcode"
+    },
+    "firstName" : "firstName",
+    "lastName" : "lastName"
+  },
+  "orderItems" : [ {
+    "gross" : 6.02214129E+23,
+    "net" : 6.02214129E+23,
+    "notes" : "orderNotes",
+    "product" : {
+      "shortText" : "shortText"
+    },
+    "quantity" : 6.02214129E+23,
+    "shippedTo" : {
+      "line1" : "line1",
+      "line2" : "line2",
+      "postcode" : "postcode"
+    }
+  }, {
+    "gross" : 6.02214129E+23,
+    "net" : 6.02214129E+23,
+    "notes" : "orderNotes",
+    "product" : {
+      "shortText" : "shortText"
+    },
+    "quantity" : 6.02214129E+23,
+    "shippedTo" : {
+      "line1" : "line1",
+      "line2" : "line2",
+      "postcode" : "postcode"
+    }
+  }, {
+    "gross" : 6.02214129E+23,
+    "net" : 6.02214129E+23,
+    "notes" : "orderNotes",
+    "product" : {
+      "shortText" : "shortText"
+    },
+    "quantity" : 6.02214129E+23,
+    "shippedTo" : {
+      "line1" : "line1",
+      "line2" : "line2",
+      "postcode" : "postcode"
+    }
+  } ],
+  "shippedTo" : {
+    "line1" : "line1",
+    "line2" : "line2",
+    "postcode" : "postcode"
+  },
+  "shippingCost" : 6.02214129E+23,
+  "status" : "PLACED"
+}

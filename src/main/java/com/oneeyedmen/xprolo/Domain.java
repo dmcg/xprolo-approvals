@@ -1,5 +1,6 @@
 package com.oneeyedmen.xprolo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.google.common.collect.ImmutableList;
 
@@ -11,6 +12,7 @@ import java.util.List;
 @SuppressWarnings({"UnusedDeclaration", "ConstantConditions"})
 public class Domain {
 
+    @JsonPropertyOrder(alphabetic = true)
     public static class Customer {
         public Customer(Long id, String firstName, String lastName, Date dob, Address address) {
             //
@@ -24,6 +26,7 @@ public class Domain {
         public void printOn(PrintStream s) { s.println("Hello"); }
     }
 
+    @JsonPropertyOrder(alphabetic = true)
     public static class Address {
         public Address(Long id, String line1, String line2, String postcode) {
             // ...
@@ -35,6 +38,7 @@ public class Domain {
         public String getPostcode() { return something(); }
     }
 
+    @JsonPropertyOrder(alphabetic = true)
     public static class Order {
         public Order(Long id, Customer customer, Address shippedTo, BigDecimal shippingCost, List<OrderItem> items) {
             // ...
@@ -48,6 +52,7 @@ public class Domain {
         public List<OrderItem> getOrderItems() { return something(); }
     }
 
+    @JsonPropertyOrder(alphabetic = true)
     public static class OrderItem {
         public OrderItem(Long id, Order order, Product product, BigDecimal quantity, BigDecimal net, BigDecimal gross, String notes) {
             //...
@@ -59,9 +64,11 @@ public class Domain {
         public BigDecimal getQuantity() { return something(); }
         public BigDecimal getNet() { return something(); }
         public BigDecimal getGross() { return something(); }
-        public String getNotes() { return something(); }
+        @JsonProperty(value = "notes")
+        public String getOrderNotes() { return something(); }
     }
 
+    @JsonPropertyOrder(alphabetic = true)
     public abstract class Product {
         public Product(Long id, String description, Object ... andSoOnAndSoOn) {}
         public Long id() { return something(); }

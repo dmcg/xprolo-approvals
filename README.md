@@ -17,6 +17,7 @@ Steps
 
 Resources
 
+- @duncanmcg
 - [Llewellyn Falco](http://approvaltests.sourceforge.net/)
 - [Okey-doke](http://github.com/dmcg/okeydoke)
 - [Fakir](http://github.com/dmcg/fakir)

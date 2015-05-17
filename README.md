@@ -5,6 +5,7 @@ Approvals tests are useful when
 
 1. You don't know what you want to test for, but you'll know it when you see it.
 2. You do know what you want to test for, but it's complicated.
+3. Retrofitting tests to existing code.
 
 Steps
 

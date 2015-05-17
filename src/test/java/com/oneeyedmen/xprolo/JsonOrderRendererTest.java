@@ -27,16 +27,7 @@ public class JsonOrderRendererTest {
     }
 
     private Factory legacyFactory() {
-        return new DefaultFactory() {
-            @Override
-            protected <T> Object createA(Class<T> rawType) {
-                if (rawType.isAssignableFrom(Domain.OrderItem.class))
-                    return new Faker<Domain.OrderItem>() {
-                        String orderNotes = "notes";
-                    }.get();
-                return super.createA(rawType);
-            }
-        };
+        return new DefaultFactory().withOverrideObject(Domain.OrderItem.class, new Object() {String orderNotes = "notes";});
     }
 
     private String approved(Path path) throws IOException {

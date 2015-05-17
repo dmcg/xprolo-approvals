@@ -2,12 +2,12 @@ package com.oneeyedmen.xprolo;
 
 import com.google.common.base.Charsets;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 
 public class Util {
-    public static String readFileToString(Path path) throws IOException {
-        return new String(Files.readAllBytes(path), Charsets.UTF_8);
+    public static String readFileToString(File file) throws IOException {
+        return new String(Files.readAllBytes(file.toPath()), Charsets.UTF_8);
     }
 }
